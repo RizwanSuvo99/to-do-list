@@ -1,0 +1,198 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*======== Use a more-intuitive box-sizing model & Remove default margin,padding ========*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*======== Add accessible line-height & Improve text rendering ========*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/*======== Improve media defaults ========*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*======== Remove built-in form typography styles ========*/
+input,
+button,
+textarea,
+select,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+/* ========== Reset a & span  & ul & li ========== */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/*======== Avoid text overflows ========*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ==========< Flex & Grid Utilities >========== */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.place-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-direction: column;
+}
+
+/* Main CSS Start */
+body {
+  background-color: #252424;
+  min-height: 95vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url("./img/MaskGroup.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 45rem;
+  max-width: 30rem;
+  padding: 1.3rem 1.8rem;
+  border-radius: 1.875rem;
+}
+
+.main__heading {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin-bottom: 2.25rem;
+}
+
+.main__form {
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main__input {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 0.3125rem;
+  width: 75%;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.main__btn {
+  padding: 0.3rem 1rem;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 0.3125rem;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 25%;
+  font-weight: 500;
+}
+
+.main__ul-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.main__span {
+  color: #000;
+  background-color: #ffd700;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 0.3125rem;
+}
+
+.main__para {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+.text__strike {
+  text-decoration: line-through;
+}
+
+.main__del,.main__check{
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right:.5rem;
+    cursor: pointer;
+}
+
+.main__check i{
+    color: #fff;
+    font-size: 1.2rem;
+}
